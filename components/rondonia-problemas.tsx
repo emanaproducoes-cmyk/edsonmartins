@@ -5,7 +5,7 @@ import { Unlink2, FileStack, Building2, ShieldAlert } from 'lucide-react'
 
 const DESAFIOS = [
   {
-    icon: Unlink2,
+    icon: Truck,
     titulo: 'Escoamento Comprometido',
     desc: 'Gargalos logísticos severos na malha rodoviária elevam o custo do frete e reduzem a competitividade do produtor rondoniense.',
   },
