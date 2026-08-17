@@ -1,6 +1,33 @@
 import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
-import { Scale, Landmark } from 'lucide-react'
+import { Calendar, Tractor, Landmark, ShieldCheck } from 'lucide-react'
+
+const destaques = [
+  {
+    icon: Calendar,
+    title: '40 Anos de Rondônia',
+    description: 'Chegada em Urupá em 1986. Vida dedicada à construção e desenvolvimento do estado.',
+    accent: 'border-t-novo-orange',
+  },
+  {
+    icon: Tractor,
+    title: 'Produtor & Pecuarista',
+    description: 'Produtor rural autêntico que vivencia diariamente a rotina e os desafios do campo.',
+    accent: 'border-t-sky-500',
+  },
+  {
+    icon: Landmark,
+    title: 'Ex-Prefeito Gestor',
+    description: 'Construiu a cidade de Urupá "quase do zero", demonstrando capacidade administrativa real.',
+    accent: 'border-t-novo-orange',
+  },
+  {
+    icon: ShieldCheck,
+    title: '4 Mandatos Ficha Limpa',
+    description: 'Reputação ilibada na Assembleia, sem nenhum escândalo, mantendo trabalho comunitário.',
+    accent: 'border-t-sky-500',
+  },
+]
 
 export function MinhaHistoria() {
   return (
@@ -56,34 +83,35 @@ export function MinhaHistoria() {
             </p>
           </Reveal>
 
+          {/* Banner com o slogan âncora */}
+          <Reveal delay={280}>
+            <div className="mt-8 rounded-2xl border-2 border-novo-orange/50 bg-card px-6 py-8 shadow-sm sm:px-10">
+              <p className="text-center font-display text-2xl leading-snug tracking-wide text-novo-navy sm:text-3xl">
+                &ldquo;Deputado Edson do Povo — Quem conhece, confia.&rdquo;
+              </p>
+            </div>
+          </Reveal>
+
+          {/* Cards de destaque */}
           <Reveal delay={320}>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-novo-orange/50 hover:shadow-lg">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-novo-navy text-novo-yellow transition-transform duration-300 group-hover:scale-110">
-                  <Landmark className="size-5" />
-                </span>
-                <div>
-                  <p className="font-display text-xl leading-none tracking-wide text-novo-navy">
-                    Logística & Infraestrutura
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Fim do &ldquo;Custo Rondônia&rdquo; com estradas e integração modal.
-                  </p>
-                </div>
-              </div>
-              <div className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-novo-orange/50 hover:shadow-lg">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-novo-navy text-novo-yellow transition-transform duration-300 group-hover:scale-110">
-                  <Scale className="size-5" />
-                </span>
-                <div>
-                  <p className="font-display text-xl leading-none tracking-wide text-novo-navy">
-                    Proteção à Mulher
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Acolhimento e firmeza no combate à violência doméstica.
-                  </p>
-                </div>
-              </div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {destaques.map((item) => {
+                const Icon = item.icon
+                return (
+                  <div
+                    key={item.title}
+                    className={`group rounded-xl border border-border ${item.accent} border-t-4 bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-novo-orange/50 hover:shadow-lg`}
+                  >
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-novo-navy text-novo-yellow transition-transform duration-300 group-hover:scale-110">
+                      <Icon className="size-5" />
+                    </span>
+                    <p className="mt-3 font-display text-xl leading-none tracking-wide text-novo-navy">
+                      {item.title}
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">{item.description}</p>
+                  </div>
+                )
+              })}
             </div>
           </Reveal>
         </div>
