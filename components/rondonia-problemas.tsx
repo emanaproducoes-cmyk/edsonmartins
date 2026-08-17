@@ -1,29 +1,29 @@
 'use client'
 
-import { useState } from 'react'
 import { Reveal } from '@/components/reveal'
-import { PROBLEMAS } from '@/lib/site-data'
-import {
-  Construction,
-  TriangleAlert,
-  Route,
-  PlaneTakeoff,
-  Stethoscope,
-  ShieldAlert,
-  FileStack,
-  Users,
-  ChevronDown,
-} from 'lucide-react'
+import { Truck, FileStack, Building2, ShieldAlert } from 'lucide-react'
 
-const ICONS = [
-  Construction,
-  TriangleAlert,
-  Route,
-  PlaneTakeoff,
-  Stethoscope,
-  ShieldAlert,
-  FileStack,
-  Users,
+const DESAFIOS = [
+  {
+    icon: Truck,
+    titulo: 'Escoamento Comprometido',
+    desc: 'Gargalos logísticos severos na malha rodoviária elevam o custo do frete e reduzem a competitividade do produtor rondoniense.',
+  },
+  {
+    icon: FileStack,
+    titulo: 'Custo Burocrático',
+    desc: 'Excesso de burocracia estatal e tributação punitiva sufocam o pequeno produtor e empreendedores locais.',
+  },
+  {
+    icon: Building2,
+    titulo: 'Infraestrutura Municipal',
+    desc: 'Vulnerabilidade nos ramais e vicinais produtivas isola famílias e dificulta a circulação de riquezas no interior.',
+  },
+  {
+    icon: ShieldAlert,
+    titulo: 'Segurança Descentralizada',
+    desc: 'Necessidade urgente de fortalecimento e presença ostensiva das forças de segurança nas zonas urbanas e rurais.',
+  },
 ]
 
 // Textura de ruído sutil para o glassmorphism dos cards
@@ -34,8 +34,6 @@ const NOISE_BG = {
 }
 
 export function RondoniaProblemas() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
   return (
     <section id="rondonia" className="relative overflow-hidden bg-novo-navy py-20 md:py-28">
       <div
@@ -48,57 +46,37 @@ export function RondoniaProblemas() {
       />
 
       <div className="relative mx-auto max-w-7xl px-4 md:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="max-w-3xl">
           <Reveal>
             <span className="text-sm font-bold uppercase tracking-[0.25em] text-novo-orange">
-              O Diagnóstico
+              Diagnóstico
             </span>
-            <h2 className="mt-3 text-balance font-display text-2xl leading-none tracking-wide text-white md:text-6xl">
-              Rondônia não precisa de discursos vindos de Brasília. Precisa de{' '}
-              <span className="text-novo-orange">representatividade FEDERAL</span> que traga
-              resultados para o nosso estado.
+            <h2 className="mt-3 text-balance font-display text-4xl leading-none tracking-wide text-white md:text-6xl">
+              Desafios <span className="text-novo-orange">Estruturais</span> do Estado
             </h2>
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {PROBLEMAS.map((problema, i) => {
-            const Icon = ICONS[i]
-            const isOpen = openIndex === i
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
+          {DESAFIOS.map((desafio, i) => {
+            const Icon = desafio.icon
 
             return (
-              <Reveal key={problema.titulo} delay={(i % 4) * 90} as="article">
+              <Reveal key={desafio.titulo} delay={(i % 4) * 90} as="article">
                 <div
                   style={NOISE_BG}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/15 bg-white/[0.06] p-6 shadow-lg shadow-black/20 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-novo-orange/50 hover:bg-white/[0.09]"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/15 border-l-4 border-l-sky-400 bg-white/[0.06] p-6 shadow-lg shadow-black/20 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-l-novo-orange hover:bg-white/[0.09]"
                 >
                   <div className="flex items-center gap-3">
                     <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-novo-orange/15 text-novo-orange transition-all duration-300 group-hover:bg-novo-orange group-hover:text-white">
                       <Icon className="size-5" />
                     </span>
                     <h3 className="font-display text-xl leading-none tracking-wide text-white">
-                      {problema.titulo}
+                      {desafio.titulo}
                     </h3>
                   </div>
 
-                  <p className="mt-4 text-sm leading-relaxed text-white/65">{problema.desc}</p>
-
-                  {isOpen && (
-                    <p className="mt-3 border-t border-white/10 pt-3 text-sm leading-relaxed text-white/65">
-                      <strong className="font-semibold text-white">Ação 3030:</strong>{' '}
-                      {problema.acao}
-                    </p>
-                  )}
-
-                  <button
-                    type="button"
-                    onClick={() => setOpenIndex(isOpen ? null : i)}
-                    aria-expanded={isOpen}
-                    className="mt-4 inline-flex items-center gap-1.5 self-start text-xs font-bold uppercase tracking-wide text-novo-orange transition-colors duration-300 hover:text-novo-yellow"
-                  >
-                    <ChevronDown className="size-3.5" />
-                    {isOpen ? 'Menos detalhes' : 'Saiba mais'}
-                  </button>
+                  <p className="mt-4 text-sm leading-relaxed text-white/65">{desafio.desc}</p>
                 </div>
               </Reveal>
             )
