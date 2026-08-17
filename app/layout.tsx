@@ -15,24 +15,24 @@ const robotoCondensed = Roboto_Condensed({
 })
 export const metadata: Metadata = {
   metadataBase: new URL('https://adrianamartins-virid.vercel.app'),
-  title: 'Adriana Martins 3030 — Deputada Federal | Coragem para Cuidar!',
+  title: 'Edson Martins 308o0 — Deputado Estadual | O Deputado do Povo!',
   description:
-    'Adriana Martins, candidata a Deputada Federal por Rondônia pelo Partido NOVO. Coragem para Cuidar! Um plano técnico e concreto para a segurança, a renda e o futuro de Rondônia. Some forças com a campanha 3030.',
+    'Edson Martins, candidato a Deputado Estadual por Rondônia pelo Partido NOVO. O Deputado do Povo! Edson Martins leva a Assembleia quarenta anos de história, gestão honesta e compromisso com povo rondoniense.',
   generator: 'v0.app',
   keywords: [
-    'Adriana Martins',
-    '3030',
-    'Deputada Federal',
+    'Edson Martins',
+    '30800',
+    'Deputada Estadual',
     'Partido NOVO',
     'Rondônia',
-    'Coragem para Cuidar',
+    'O Deputado do Povo',
   ],
   openGraph: {
-    title: 'Adriana Martins 3030 — Coragem para Cuidar!',
+    title: 'Edson Martins 30800 — O Deputado do Povo!',
     description:
-      'Candidata a Deputada Federal por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
-    url: 'https://adrianamartins-virid.vercel.app',
-    siteName: 'Adriana Martins 3030',
+      'Candidato a Deputada Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
+    url: 'https://https://edsonmartins.vercel.app/',
+    siteName: 'Edson Martins 30800',
     type: 'website',
     locale: 'pt_BR',
     images: [
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Adriana Martins 3030 — Coragem para Cuidar! Candidata a Deputada Federal por Rondônia.',
+        alt: 'Edson Martins 30800 — O Deputado do Povo! Candidata a Deputada Estadual por Rondônia.',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Adriana Martins 3030 — Coragem para Cuidar!',
+    title: 'Edson Martins 30800 — O Deputado do Povo!',
     description:
-      'Candidata a Deputada Federal por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
+      'Candidato a Deputado Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
     images: ['/og-image.png'],
   },
 }
