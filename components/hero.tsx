@@ -58,7 +58,7 @@ export function Hero() {
               <span
                 className="text-novo-orange"
                 style={{
-                  WebkitTextStroke: '4px #ffffff',
+                  WebkitTextStroke: '3px #ffffff',
                   paintOrder: 'stroke fill',
                   textShadow: 'none',
                 }}
@@ -67,11 +67,11 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-3 max-w-md text-pretty text-xs leading-relaxed text-white/85 sm:text-sm md:ml-auto md:mr-0 md:text-base">
-              Edson Martins leva a Assembleia quarenta anos de história,{' '}
-              <strong className="font-semibold text-white">gestão honesta e compromisso</strong> com povo
-              rondoniense.
-            </p>
+            <p className="mx-auto mt-3 max-w-md text-pretty text-xs leading-relaxed text-white/85 [text-shadow:0_2px_10px_rgba(0,0,0,0.55)] sm:text-sm md:ml-auto md:mr-0 md:text-base">
+  Edson Martins leva a Assembleia quarenta anos de história,{' '}
+  <strong className="font-semibold text-white">gestão honesta e compromisso</strong> com povo
+  rondoniense.
+</p>
 
             <div className="mt-4 flex flex-col items-center gap-2.5 sm:flex-row sm:justify-center md:mt-5 md:items-end md:justify-end">
               <a
