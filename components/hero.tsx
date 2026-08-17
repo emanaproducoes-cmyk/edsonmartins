@@ -130,6 +130,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Barra laranja logo abaixo do Hero */}
