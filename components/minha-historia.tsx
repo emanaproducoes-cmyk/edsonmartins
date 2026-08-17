@@ -15,7 +15,7 @@ export function MinhaHistoria() {
             />
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/hero-adriana.png"
+                src="/images/HERO_HEADER_EDSON.png"
                 alt="Adriana Martins em composição editorial da campanha 3030"
                 width={1731}
                 height={920}
