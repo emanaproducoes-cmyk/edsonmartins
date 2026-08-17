@@ -1,7 +1,7 @@
 'use client'
 
 import { Reveal } from '@/components/reveal'
-import { Unlink2, FileStack, Building2, ShieldAlert } from 'lucide-react'
+import { Truck, FileStack, Building2, ShieldAlert } from 'lucide-react'
 
 const DESAFIOS = [
   {
@@ -86,3 +86,4 @@ export function RondoniaProblemas() {
     </section>
   )
 }
+
