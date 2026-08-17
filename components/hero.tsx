@@ -18,18 +18,6 @@ export function Hero() {
       id="topo"
       className="relative bg-novo-navy-deep pt-24 pb-10 md:pt-28 md:pb-14"
     >
-      {/* Animação do sweep da logo — CSS puro, embutido no componente, roda sozinha (sem precisar de hover) */}
-      <style>{`
-        @keyframes logoSweep {
-          0%, 55% { transform: translateX(-160%) skewX(-12deg); }
-          80% { transform: translateX(360%) skewX(-12deg); }
-          100% { transform: translateX(360%) skewX(-12deg); }
-        }
-        .logo-sweep {
-          animation: logoSweep 4s ease-in-out infinite;
-        }
-      `}</style>
-
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* Selo */}
         <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-novo-orange/40 bg-novo-orange/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-novo-yellow">
@@ -59,6 +47,7 @@ export function Hero() {
               width={400}
               height={260}
               className="h-auto w-full object-contain"
+            />
           </div>
 
           {/* Conteúdo — canto inferior direito do banner */}
