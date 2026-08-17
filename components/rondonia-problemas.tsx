@@ -1,11 +1,11 @@
 'use client'
 
 import { Reveal } from '@/components/reveal'
-import { Truck, FileStack, Building2, ShieldAlert } from 'lucide-react'
+import { Unlink2, FileStack, Building2, ShieldAlert } from 'lucide-react'
 
 const DESAFIOS = [
   {
-    icon: MapPinOff,
+    icon: Unlink2,
     titulo: 'Escoamento Comprometido',
     desc: 'Gargalos logísticos severos na malha rodoviária elevam o custo do frete e reduzem a competitividade do produtor rondoniense.',
   },
