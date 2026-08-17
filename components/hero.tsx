@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import { ArrowRight, HeartHandshake, ShieldCheck } from 'lucide-react'
+import { ArrowRight, ChevronDown, HeartHandshake, ShieldCheck } from 'lucide-react'
 import { whatsappLink } from '@/lib/site-data'
 
 const sweepBase = {
@@ -14,10 +14,22 @@ export function Hero() {
   const [btn2Hover, setBtn2Hover] = useState(false)
 
   return (
-    <section
-      id="topo"
-      className="relative bg-novo-navy-deep pt-24 pb-10 md:pt-28 md:pb-14"
-    >
+    <>
+      {/* CSS próprio do componente — garante que a animação exista sempre, sem depender do Tailwind */}
+      <style>{`
+        @keyframes heroArrowBounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(8px); }
+        }
+        .hero-arrow-bounce {
+          animation: heroArrowBounce 1.4s ease-in-out infinite;
+        }
+      `}</style>
+
+      <section
+        id="topo"
+        className="relative bg-novo-navy-deep pt-24 pb-10 md:pt-28 md:pb-14"
+      >
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* Selo */}
         <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-novo-orange/40 bg-novo-orange/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-novo-yellow">
@@ -67,11 +79,11 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-3 max-w-md text-pretty text-xs leading-relaxed text-white/85 [text-shadow:0_2px_10px_rgba(0,0,0,0.55)] sm:text-sm md:ml-auto md:mr-0 md:text-base">
-  Edson Martins leva a Assembleia quarenta anos de história,{' '}
-  <strong className="font-semibold text-white">gestão honesta e compromisso</strong> com povo
-  rondoniense.
-</p>
+            <p className="mx-auto mt-3 max-w-md text-pretty text-xs leading-relaxed text-white/85 sm:text-sm md:ml-auto md:mr-0 md:text-base">
+              Edson Martins leva a Assembleia quarenta anos de história,{' '}
+              <strong className="font-semibold text-white">gestão honesta e compromisso</strong> com povo
+              rondoniense.
+            </p>
 
             <div className="mt-4 flex flex-col items-center gap-2.5 sm:flex-row sm:justify-center md:mt-5 md:items-end md:justify-end">
               <a
@@ -118,7 +130,28 @@ export function Hero() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Barra laranja logo abaixo do Hero */}
+      <div className="relative bg-novo-orange px-4 py-5 text-center sm:py-6 md:py-7">
+        <p className="text-sm font-bold uppercase tracking-[0.1em] text-white sm:text-base sm:tracking-[0.15em] md:text-lg">
+          O Deputado do Povo — Quem Conhece, Confia!
+        </p>
+
+        {/* Wrapper de posicionamento — fica parado, sem competir com a animação do botão */}
+        <div className="absolute bottom-0 left-1/2 z-20 -translate-x-1/2 translate-y-1/2">
+          <a
+            href="#propostas"
+            aria-label="Rolar para conhecer o plano de governo"
+            className="hero-arrow-bounce flex size-11 items-center justify-center overflow-hidden rounded-full border border-white/40 bg-white/10 text-white shadow-lg shadow-black/30 backdrop-blur-md transition-colors duration-300 hover:border-white/70 hover:bg-white/20 sm:size-12"
+          >
+            <span className="flex flex-col items-center">
+              <ChevronDown aria-hidden className="size-4 sm:size-[18px]" />
+              <ChevronDown aria-hidden className="-mt-2.5 size-4 sm:size-[18px]" />
+            </span>
+          </a>
+        </div>
       </div>
-    </section>
+    </>
   )
 }
