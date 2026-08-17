@@ -30,7 +30,7 @@ export function Navbar() {
           className="group/logo relative inline-flex items-center overflow-hidden"
         >
           <Image
-            src="/images/LOGO_HORIZONTAL.png"
+            src="/images/LOGO_HORIZONTAL_EDSON.png"
             alt="Adriana Martins 3030 - Partido NOVO"
             width={320}
             height={64}
