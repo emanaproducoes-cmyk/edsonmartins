@@ -40,17 +40,21 @@ export function MinhaHistoria() {
 
           <Reveal delay={120}>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
-Em 1986, quando migrou do Estado do Espírito
-Santo acompanhado de sua esposa e três filhos pequenos, estabelecendo-se na zona rural do município de Urupá.
-Trabalhou diretamente na terra como produtor rural e pecuarista </strong>, sustentando sua família com a força do seu trabalho
-agrícola.
-
-Sua entrada na vida pública ocorreu de forma orgânica devido ao seu espírito comunitário. Foi eleito e reeleito Prefeito de
-Urupá por dois mandatos, sendo o gestor responsável por estruturar e construir a infraestrutura urbana e rural do
-município "praticamente do zero". Posteriormente, foi eleito Deputado Estadual por quatro mandatos consecutivos na
-Assembleia Legislativa de Rondônia, acumulando extenso patrimônio político pautado pela idoneidade moral,
-simplicidade e atuações voltadas ao atendimento direto dos cidadãos rondonienses..
+              Em 1986, quando migrou do Estado do Espírito Santo acompanhado de sua esposa e três filhos
+              pequenos, estabelecendo-se na zona rural do município de Urupá. Trabalhou diretamente na
+              terra como produtor rural e pecuarista, sustentando sua família com a força do seu trabalho
+              agrícola.
+              <br />
+              <br />
+              Sua entrada na vida pública ocorreu de forma orgânica devido ao seu espírito comunitário. Foi
+              eleito e reeleito Prefeito de Urupá por dois mandatos, sendo o gestor responsável por
+              estruturar e construir a infraestrutura urbana e rural do município &ldquo;praticamente do
+              zero&rdquo;. Posteriormente, foi eleito Deputado Estadual por quatro mandatos consecutivos na
+              Assembleia Legislativa de Rondônia, acumulando extenso patrimônio político pautado pela
+              idoneidade moral, simplicidade e atuações voltadas ao atendimento direto dos cidadãos
+              rondonienses.
             </p>
+          </Reveal>
 
           <Reveal delay={320}>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
