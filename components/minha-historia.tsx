@@ -40,9 +40,11 @@ const TOTAL_IMAGENS = 10
 const VISIVEIS = 4
 const INTERVALO_AUTOPLAY = 4000 // ms
 
+// As fotos 01.jpeg...10.jpeg estão na raiz de /public, por isso o caminho
+// é "/01.jpeg" e não "/images/01.jpeg" (essa pasta guarda outros ativos).
 const imagens = Array.from(
   { length: TOTAL_IMAGENS },
-  (_, i) => `/images/${String(i + 1).padStart(2, '0')}.jpeg`,
+  (_, i) => `/${String(i + 1).padStart(2, '0')}.jpeg`,
 )
 
 /* ------------------------------------------------------------------ */
@@ -141,7 +143,7 @@ export function MinhaHistoria() {
   return (
     <section id="historia" className="relative overflow-hidden bg-background py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 md:px-8 lg:grid-cols-2">
-        {/* Imagem editorial — alinhada com o 1º parágrafo */}
+        {/* Imagem editorial + carrossel logo abaixo dela */}
         <Reveal className="order-2 lg:order-1 lg:mt-28">
           <div className="group relative">
             <div
@@ -158,6 +160,11 @@ export function MinhaHistoria() {
                 className="h-auto w-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>
+          </div>
+
+          {/* Carrossel de fotos, abaixo do banner principal */}
+          <div className="mt-4">
+            <CarrosselFotos />
           </div>
         </Reveal>
 
@@ -192,13 +199,6 @@ export function MinhaHistoria() {
               idoneidade moral, simplicidade e atuações voltadas ao atendimento direto dos cidadãos
               rondonienses.
             </p>
-          </Reveal>
-
-          {/* Carrossel de fotos */}
-          <Reveal delay={280}>
-            <div className="mt-6">
-              <CarrosselFotos />
-            </div>
           </Reveal>
 
           {/* Cards de destaque — 4 em uma única linha */}
