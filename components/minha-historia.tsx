@@ -40,12 +40,15 @@ export function MinhaHistoria() {
 
           <Reveal delay={120}>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Adriana Martins consolida sua candidatura a Deputada Federal em 2026 pelo Partido NOVO,
-              trazendo uma visão técnica, jurídica e moderna para os grandes desafios do Estado de
-              Rondônia em Brasília. Advogada com marcante atuação institucional, Adriana constrói sua
-              plataforma sobre duas bandeiras centrais indispensáveis para o crescimento rondoniense: o
-              desenvolvimento da logística e infraestrutura estadual e a proteção jurídica e social à
-              mulher e à família.
+Em 1986, quando migrou do Estado do Espírito
+Santo acompanhado de sua esposa e três filhos pequenos, estabelecendo-se na zona rural do município de Urupá.
+Trabalhou diretamente na terra como produtor rural e pecuarista, sustentando sua família com a força do seu trabalho
+agrícola.
+Sua entrada na vida pública ocorreu de forma orgânica devido ao seu espírito comunitário. Foi eleito e reeleito Prefeito de
+Urupá por dois mandatos, sendo o gestor responsável por estruturar e construir a infraestrutura urbana e rural do
+município "praticamente do zero". Posteriormente, foi eleito Deputado Estadual por quatro mandatos consecutivos na
+Assembleia Legislativa de Rondônia, acumulando extenso patrimônio político pautado pela idoneidade moral,
+simplicidade e atuações voltadas ao atendimento direto dos cidadãos rondonienses..
             </p>
           </Reveal>
 
