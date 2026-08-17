@@ -59,12 +59,6 @@ export function Hero() {
               width={400}
               height={260}
               className="h-auto w-full object-contain"
-            />
-            {/* Sweep — passa só por cima da logo, looping automático (funciona em mobile e desktop, Chrome e Safari) */}
-            <div
-              aria-hidden
-              className="logo-sweep pointer-events-none absolute inset-y-0 left-0 z-[5] w-1/2 skew-x-[-12deg] bg-gradient-to-r from-transparent via-white/40 to-transparent"
-            />
           </div>
 
           {/* Conteúdo — canto inferior direito do banner */}
