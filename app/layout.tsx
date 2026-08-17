@@ -15,7 +15,7 @@ const robotoCondensed = Roboto_Condensed({
 })
 export const metadata: Metadata = {
   metadataBase: new URL('https://adrianamartins-virid.vercel.app'),
-  title: 'Edson Martins 308o0 — Deputado Estadual | O Deputado do Povo!',
+  title: 'Edson Martins 30800 — Deputado Estadual | O Deputado do Povo!',
   description:
     'Edson Martins, candidato a Deputado Estadual por Rondônia pelo Partido NOVO. O Deputado do Povo! Edson Martins leva a Assembleia quarenta anos de história, gestão honesta e compromisso com povo rondoniense.',
   generator: 'v0.app',
