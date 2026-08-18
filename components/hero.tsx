@@ -48,10 +48,29 @@ export function Hero() {
             className="object-cover object-[68%_center] sm:object-[62%_center] md:object-[58%_center] lg:object-[55%_center]"
           />
 
-          {/* Logo do Edson — mesma posição/proporção da logo da Adriana no banner original */}
+          {/*
+            Logo do Edson — posição responsiva por breakpoint.
+            IMPORTANTE: o container muda de proporção em cada breakpoint
+            (aspect-[4/5] no mobile → sm:aspect-[16/10] → md:aspect-[21/9]),
+            então a MESMA posição em % não funciona para todos os formatos.
+            Cada faixa abaixo foi ajustada para não sobrepor o rosto:
+              - mobile (base, retrato 4/5): logo pequena, colada no canto
+                superior esquerdo, acima da linha do rosto.
+              - sm (retrato/tablet 16/10): levemente maior, ainda no canto
+                superior esquerdo.
+              - md (tablet largo/banner 21/9): posição original do design.
+              - lg/xl (notebook 13" e telas maiores): mesma posição do md,
+                com pequeno ajuste fino de leitura em telas mais largas.
+          */}
           <div
-            className="absolute overflow-hidden"
-            style={{ left: '9.3%', top: '27.2%', width: '27.1%' }}
+            className="
+              absolute overflow-hidden z-10
+              left-[4%]  top-[3%]    w-[34%]
+              sm:left-[3%] sm:top-[4%]  sm:w-[22%]
+              md:left-[9.3%] md:top-[27.2%] md:w-[27.1%]
+              lg:left-[8.5%] lg:top-[26%]   lg:w-[24%]
+              xl:left-[8%]   xl:top-[25%]   xl:w-[22%]
+            "
           >
             <Image
               src="/images/LOGO_EDSON.png"
