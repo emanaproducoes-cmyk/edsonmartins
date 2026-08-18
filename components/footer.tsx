@@ -44,7 +44,7 @@ export function Footer() {
                 className="h-auto w-36 md:w-40"
                 priority={false}
               />
-              <p className="mt-1 font-display text-2xl italic tracking-wide text-novo-orange">
+              <p className="mt-1 font-display text-2xl tracking-wide text-novo-orange">
                 O DEPUTADO DO POVO!
               </p>
               <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">
