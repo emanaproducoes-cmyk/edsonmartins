@@ -22,13 +22,13 @@ export function StickyCtaMobile() {
       )}
     >
       <a
-        href={whatsappLink('Olá! Quero apoiar a campanha da Adriana Martins 3030.')}
+        href={whatsappLink('Olá! Quero apoiar a campanha do Edson Martins 30800.')}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 rounded-full bg-novo-orange py-3.5 text-base font-bold uppercase tracking-wide text-white shadow-lg transition-colors hover:bg-novo-orange-dark"
       >
         <HeartHandshake className="size-5" />
-        Quero Apoiar · 3030
+        Quero Apoiar · 30800
       </a>
     </div>
   )
