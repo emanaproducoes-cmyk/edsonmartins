@@ -332,21 +332,20 @@ export function MinhasPropostas() {
               Minhas propostas para Rondônia
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Do essencial ao futuro: um plano concreto em quatro eixos, porque quanto mais concreto o
-              problema, mais concreta é a solução.
+              Os problemas reais de Rondônia são os mais básicos: Saúde Básica, Melhorias nas vias urbanas, Profissinalização para os Jovens - Vamos juntos nessa jornada.
             </p>
           </Reveal>
 
           <Reveal delay={120}>
             <Image
-              src="/images/LOGO_HORIZONTAL_EDSON.png"
+              src="/images/LOGO_HORIZONTAL_EDSON_LARANJA.png"
               alt="Adriana Martins 3030 - Partido NOVO"
               width={320}
               height={64}
               className="mx-auto mt-8 h-10 w-auto object-contain md:h-30"
             />
-            <p className="mt-1 font-display text-3xl italic tracking-wide text-novo-orange">
-              Coragem para Cuidar!
+            <p className="mt-1 font-display text-4xl tracking-wide text-novo-orange">
+              "O Deputado do Povo!
             </p>
           </Reveal>
         </div>
