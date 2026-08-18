@@ -35,14 +35,14 @@ export function CtaFinal() {
             A hora é agora
           </span>
           <h2 className="mt-5 text-balance font-display text-6xl leading-[0.92] tracking-wide text-white md:text-7xl">
-            Coragem
+           O DEPUTADO
             <br />
-            <span className="text-novo-orange">para Cuidar!</span>
+            <span className="text-novo-orange">DO POVO!</span>
           </h2>
           <p className="mt-5 max-w-lg text-pretty text-lg leading-relaxed text-white/80">
-            Rondônia precisa de uma voz técnica e firme em Brasília. Deixe seus dados e receba as
+            Rondônia precisa de uma voz firme. Deixe seus dados e receba as
             propostas da campanha diretamente no seu WhatsApp. Juntos, vamos transformar problemas
-            concretos em soluções concretas.
+            concretos em soluções reais.
           </p>
         </div>
 
