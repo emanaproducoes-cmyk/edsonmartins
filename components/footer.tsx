@@ -37,7 +37,7 @@ export function Footer() {
 
             <div className="relative px-1 py-1">
               <Image
-                src="/images/LOGO_HORIZONTAL_EDSON_LARANJA.png"
+                src="/images/LOGO_EDSON.png"
                 alt="Edson Martins 30800"
                 width={600}
                 height={650}
