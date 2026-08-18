@@ -95,7 +95,7 @@ export const ETAPAS = [
   {
     titulo: 'Conhecer',
     desc: 'Explore o plano e entenda as propostas concretas para Rondônia.',
-    exemplo: 'Leia os 3 eixos e descubra a solução para cada problema do estado.',
+    exemplo: 'Leia os 4 eixos e descubra a solução para cada problema do estado.',
   },
   {
     titulo: 'Compartilhar',
@@ -110,6 +110,6 @@ export const ETAPAS = [
   {
     titulo: 'Votar',
     desc: 'No dia da eleição, confirme o voto na mudança concreta.',
-    exemplo: 'Digite 3030 e eleja a força técnica de Rondônia em Brasília.',
+    exemplo: 'Digite 303800 e eleja o deputado do povo de Rondônia.',
   },
 ]
