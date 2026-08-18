@@ -2,16 +2,14 @@
 
 import Image from 'next/image'
 import {
-  Truck,
-  PlaneTakeoff,
-  ShieldAlert,
+  Route,
+  ClipboardCheck,
   Sprout,
-  TriangleAlert,
-  Lightbulb,
-  Scale,
-  Home,
-  HeartHandshake,
-  Wheat,
+  Coffee,
+  ShieldAlert,
+  Siren,
+  Stethoscope,
+  Landmark,
   ArrowDown,
 } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
@@ -60,100 +58,108 @@ const EIXOS = [
     numero: '01',
     cor: 'orange' as Cor,
     categoria: 'Infraestrutura',
-    icon: Truck,
-    tema: 'BR-364 & Logística',
-    nomeCompleto: 'BR-364 & Logística Integrada',
-    resumo: 'Gargalos, filas de balsa, acidentes e frete caro. Sensação de revolta no setor produtivo.',
-    hashtag: '#DuplicaBR364',
+    icon: Route,
+    tema: 'Infraestrutura & Escoamento',
+    tituloPrefixo: 'Infraestrutura & ',
+    tituloDestaque: 'Escoamento',
+    resumo:
+      'Vicinais esburacadas e pontes caindo travam a produção e encarecem o frete. O ramal é o primeiro quilômetro esquecido pelo poder público.',
+    hashtag: '#LogísticaParaCrescer',
     diagnostico: {
-      titulo: 'Diagnóstico & Indignação Local',
-      icon: TriangleAlert,
+      titulo: 'Ação Parlamentar Prioritária',
+      icon: Route,
       texto:
-        'A BR-364 é a espinha dorsal da economia de Rondônia, unindo todos os produtores do estado ao porto de Porto Velho e ao centro do país. Contudo, as falhas crônicas de manutenção e atrasos de obras elevam drasticamente o frete.',
-      destaqueLabel: 'Impacto direto',
-      destaqueTexto: 'R$ 1,8 milhão de rondonienses afetados diariamente pelo frete inflacionado nos alimentos.',
+        'Atuação firme na Assembleia Legislativa pela destinação de emendas parlamentares estaduais focadas na recuperação de vicinais produtivas e pontes estruturais em parceria com as prefeituras.',
+      destaqueLabel: 'Prioridade',
+      destaqueTexto: 'Foco na ponta do ramal — onde a produção do pequeno e médio produtor realmente escoa.',
     },
     solucao: {
-      titulo: 'Solução Proposta & Posição Política',
-      icon: Lightbulb,
+      titulo: 'Compromisso de Gestão',
+      icon: ClipboardCheck,
       texto:
-        'Exigência de pacto federal para concessão transparente com duplicação preventiva, criação do Fórum Parlamentar de Logística e fiscalização contínua das balanças e trechos críticos.',
-      slogan: '#DuplicaBR364 · O Pedágio Invisível no seu Bolso.',
+        'Fiscalização rigorosa de contratos estaduais de manutenção viária para garantir que os recursos cheguem à ponta do ramal.',
+      slogan: '#LogísticaParaCrescer',
     },
   },
   {
     numero: '02',
     cor: 'cyan' as Cor,
-    categoria: 'Mobilidade',
-    icon: PlaneTakeoff,
-    tema: 'Isolamento Aéreo',
-    nomeCompleto: 'Mobilidade & Conectividade Aérea',
-    resumo: 'Cancelamento massivo de voos e tarifas abusivas. Sentimento coletivo de abandono em PVH.',
-    hashtag: '#RondôniaSemVoos',
+    categoria: 'Economia',
+    icon: Sprout,
+    tema: 'Agro & Liberdade Econômica',
+    tituloPrefixo: 'Agro & ',
+    tituloDestaque: 'Liberdade Econômica',
+    resumo:
+      'Excesso de licenças e insegurança jurídica travam o jovem produtor rural. Rondônia precisa transformar café e pecuária em valor agregado, não em burocracia.',
+    hashtag: '#LiberdadeParaProduzir',
     diagnostico: {
-      titulo: 'Gargalo do Isolamento Aéreo',
-      icon: PlaneTakeoff,
+      titulo: 'Desburocratização no Campo',
+      icon: Sprout,
       texto:
-        'Rondônia vive um sufocamento de voos comerciais. A redução vertiginosa de frequências em Porto Velho isolou empresários, pacientes que buscam tratamento fora e o turismo regional, encarecendo as passagens a níveis proibitivos.',
-      destaqueLabel: 'Sentimento',
-      destaqueTexto: 'Sensação coletiva de abandono e entrave ao desenvolvimento econômico do estado.',
+        'Implementação de marcos legais estaduais para simplificação de licenças ambientais e garantia de segurança jurídica para o jovem produtor rural.',
+      destaqueLabel: 'Prioridade',
+      destaqueTexto: 'Segurança jurídica e simplificação de licenças para quem produz e gera emprego no campo.',
     },
     solucao: {
-      titulo: 'Ação Parlamentar Proposta',
-      icon: Scale,
+      titulo: 'Valorização da Produção',
+      icon: Coffee,
       texto:
-        'Pressão sobre a ANAC, incentivos fiscais para querosene de aviação condicionados à permanência de rotas e criação de comissão especial de defesa do consumidor rondoniense.',
-      slogan: '#RondôniaSemVoos · Conectar Rondônia com o Brasil.',
+        'Fomento à tecnologia de torrefação e exportação do café robusta, fortalecendo a pecuária sustentável e o agronegócio de valor agregado.',
+      slogan: '#LiberdadeParaProduzir',
     },
   },
   {
     numero: '03',
     cor: 'orange' as Cor,
-    categoria: 'Acolhimento',
+    categoria: 'Segurança',
     icon: ShieldAlert,
-    tema: 'Proteção à Mulher',
-    nomeCompleto: 'Proteção & Acolhimento à Mulher',
-    resumo: 'Altos índices de violência e falta de delegacias 24h. Fortíssima resposta emocional no Zap.',
-    hashtag: '#NenhumaMulherSó',
+    tema: 'Segurança & Acolhimento',
+    tituloPrefixo: 'Segurança & ',
+    tituloDestaque: 'Acolhimento',
+    resumo:
+      'Famílias inseguras e mulheres sem rede de apoio no interior. Rondônia precisa de presença policial de verdade e acolhimento humanizado em todas as regiões.',
+    hashtag: '#SegurançaParaTodos',
     diagnostico: {
-      titulo: 'Urgência Social e Realidade',
-      icon: Home,
+      titulo: 'Proteção e Cidadania',
+      icon: ShieldAlert,
       texto:
-        'Rondônia figura infelizmente entre os maiores índices de violência contra a mulher do país. No interior, a falta de Delegacias da Mulher com atendimento 24h deixa vítimas desamparadas no momento mais crítico.',
-      destaqueLabel: 'Realidade',
-      destaqueTexto: 'Falta de suporte contínuo e acolhimento ágil para famílias vulneráveis.',
+        'Destinação de recursos estaduais para estruturação de redes de apoio e proteção à mulher, garantindo resposta rápida e o suporte humanizado em todas as regiões.',
+      destaqueLabel: 'Prioridade',
+      destaqueTexto: 'Resposta rápida e suporte humanizado para as mulheres, em todas as regiões do estado.',
     },
     solucao: {
-      titulo: 'Rede "Nenhuma Mulher Só"',
-      icon: HeartHandshake,
+      titulo: 'Presença Policial Eficiente',
+      icon: Siren,
       texto:
-        'Destinação de emendas para casas de acolhimento regionalizadas, suporte digital via linha direta de emergência e fiscalização rigorosa dos recursos estaduais e federais de segurança pública.',
-      slogan: '#NenhumaMulherSó · Proteção 24h e Resposta Rápida.',
+        'Modernização e aparelhamento das forças de segurança estaduais para garantir tranquilidade absoluta às famílias rondonienses.',
+      slogan: '#SegurançaParaTodos',
     },
   },
   {
     numero: '04',
     cor: 'cyan' as Cor,
-    categoria: 'Economia',
-    icon: Sprout,
-    tema: 'Liberdade & Agro',
-    nomeCompleto: 'Liberdade Econômica & Agro Sustentável',
-    resumo: 'Burocracia ambiental e desincentivo ao produtor. Foco em crédito jovem e café robusta.',
-    hashtag: '#LiberdadeParaProduzir',
+    categoria: 'Municípios',
+    icon: Landmark,
+    tema: 'Desenvolvimento Municipal',
+    tituloPrefixo: 'Desenvolvimento ',
+    tituloDestaque: 'Municipal',
+    resumo:
+      'Prefeituras sem autonomia, postos de saúde sem insumos e escolas sem internet. O interior de Rondônia precisa de gestão eficiente, não de mais burocracia.',
+    hashtag: '#RondôniaForte',
     diagnostico: {
-      titulo: 'Vocação Produtiva & Trava Burocrática',
-      icon: Sprout,
+      titulo: 'Saúde Básica e Educação',
+      icon: Stethoscope,
       texto:
-        'O produtor rural de Rondônia é o grande motor do Estado. No entanto, enfrenta burocracia ambiental punitiva, incerteza jurídica e falta de crédito acessível para o jovem produtor rural.',
-      destaqueLabel: 'Foco de Inovação',
-      destaqueTexto: 'Valorização do Café Robusta e agronegócio de valor agregado.',
+        'Garantia de repasses estaduais desburocratizados para unidades básicas de saúde e expansão da conectividade digital nas escolas do interior.',
+      destaqueLabel: 'Prioridade',
+      destaqueTexto: 'Repasses estaduais desburocratizados chegando à saúde básica e à educação do interior.',
     },
     solucao: {
-      titulo: 'Proposta de Descomplicação',
-      icon: Wheat,
+      titulo: 'Autonomia e Gestão',
+      icon: Landmark,
       texto:
-        'Aplicação da Lei da Liberdade Econômica no campo, desburocratização de licenças, fomento ao crédito jovem agrícola e apoio à tecnologia de torrefação e exportação do café.',
-      slogan: '#LiberdadeParaProduzir · Do Campo ao Valor Agregado.',
+        'Apoio direto às administrações municipais com foco na eficiência dos gastos públicos e entrega de resultados tangíveis para a população local.',
+      slogan: '#RondôniaForte',
     },
   },
 ]
@@ -276,9 +282,15 @@ function EixoDetalhado({ eixo }: { eixo: (typeof EIXOS)[number] }) {
         className="scroll-mt-24 rounded-3xl border border-white/10 bg-novo-navy/95 p-6 md:p-10"
       >
         <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
-          <h3 className="font-display text-2xl leading-none tracking-wide text-white md:text-3xl">
-            Eixo Temático {eixo.numero}: {eixo.nomeCompleto}
-          </h3>
+          <div>
+            <span className={cn('text-xs font-bold uppercase tracking-[0.25em]', COR_MAP[eixo.cor].text)}>
+              Eixo {eixo.numero}
+            </span>
+            <h3 className="mt-1 font-display text-2xl leading-none tracking-wide text-white md:text-3xl">
+              {eixo.tituloPrefixo}
+              <span className={COR_MAP[eixo.cor].text}>{eixo.tituloDestaque}</span>
+            </h3>
+          </div>
           <span
             className={cn(
               'inline-flex w-fit items-center rounded-full border px-4 py-1.5 text-xs font-bold uppercase tracking-wide',
@@ -309,8 +321,8 @@ function EixoDetalhado({ eixo }: { eixo: (typeof EIXOS)[number] }) {
             IconTitulo={eixo.solucao.icon}
             texto={eixo.solucao.texto}
           >
-            <p className="mt-4 text-sm leading-relaxed text-white/85">
-              <strong className="font-semibold text-white">Slogan/Hashtag:</strong> {eixo.solucao.slogan}
+            <p className={cn('mt-4 text-sm font-bold', COR_MAP[oposto(eixo.cor)].text)}>
+              {eixo.solucao.slogan}
             </p>
           </DetalheCard>
         </div>
