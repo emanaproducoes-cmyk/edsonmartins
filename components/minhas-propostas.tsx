@@ -345,7 +345,7 @@ export function MinhasPropostas() {
               className="mx-auto mt-8 h-10 w-auto object-contain md:h-30"
             />
             <p className="mt-1 font-display text-4xl tracking-wide text-novo-orange">
-              "O Deputado do Povo!
+              O Deputado do Povo!
             </p>
           </Reveal>
         </div>
