@@ -339,7 +339,7 @@ export function MinhasPropostas() {
 
           <Reveal delay={120}>
             <Image
-              src="/images/LOGO_HORIZONTAL_AZUL.png"
+              src="/images/LOGO_HORIZONTAL_EDSON.png"
               alt="Adriana Martins 3030 - Partido NOVO"
               width={320}
               height={64}
