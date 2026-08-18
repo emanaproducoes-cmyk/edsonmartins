@@ -14,10 +14,10 @@ interface Msg {
 type Step = 'name' | 'city' | 'groupsYesNo' | 'chooseGroup' | 'exitMessage' | 'done'
 
 const GROUPS = [
-  'Caminhoneiros / BR-364 & Agro',
-  'Mulheres, Mães & Famílias',
+  'Proteção à Família',
+  'Liberdade & Agro',
   'Jovens Empreendedores',
-  'Fim do Isolamento Aéreo',
+  'Custo Rondônia',
 ]
 
 export function WhatsappWidget() {
