@@ -174,8 +174,8 @@ export function WhatsappWidget() {
             <MessageCircle className="size-5" />
           </span>
           <div className="leading-tight">
-            <p className="font-display text-lg tracking-wide text-white">Equipe 3030</p>
-            <p className="text-xs text-novo-yellow">Coragem para Cuidar!</p>
+            <p className="font-display text-lg tracking-wide text-white">Equipe 30800</p>
+            <p className="text-xs text-novo-yellow">O Deputado do Povo!</p>
           </div>
         </div>
 
