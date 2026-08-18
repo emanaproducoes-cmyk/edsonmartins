@@ -48,7 +48,7 @@ export function Footer() {
                 O DEPUTADO DO POVO!
               </p>
               <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">
-                Edson Martins — Candidato a Deputada Estadual por Rondônia pelo Partido NOVO.
+                Edson Martins — Candidato a Deputado Estadual por Rondônia pelo Partido NOVO.
               </p>
             </div>
           </div>
