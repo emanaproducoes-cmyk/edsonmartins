@@ -48,25 +48,42 @@ export function Hero() {
             className="object-cover object-[68%_center] sm:object-[62%_center] md:object-[58%_center] lg:object-[55%_center]"
           />
 
+          {/*
+            Logo do Edson — comportamento diferente por breakpoint:
+              - Mobile/tablet retrato (< md): fica no FLUXO normal, sempre
+                imediatamente acima do slogan (dentro do bloco de texto
+                abaixo), pois nesses formatos mais "altos" a posição
+                absoluta original cai em cima do rosto.
+              - Desktop/tablet largo (>= md): volta a ser absoluta, na
+                posição original do design (canto superior esquerdo do
+                banner), que é onde funciona bem nesse formato mais largo.
+          */}
+          <div
+            className="absolute z-10 hidden overflow-hidden md:block"
+            style={{ left: '9.3%', top: '27.2%', width: '27.1%' }}
+          >
+            <Image
+              src="/images/LOGO_EDSON.png"
+              alt="Edson Martins"
+              width={400}
+              height={260}
+              className="h-auto w-full object-contain"
+            />
+          </div>
+
           {/* Conteúdo — canto inferior direito do banner */}
           <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-5 text-center [text-shadow:0_2px_10px_rgba(0,0,0,0.55)] sm:px-6 sm:pb-8 md:right-0 md:left-auto md:max-w-lg md:px-8 md:pb-10 md:text-right">
-            {/*
-              Logo do Edson — agora faz parte do bloco de texto (fluxo normal,
-              não mais absoluta sobre a foto), sempre posicionada IMEDIATAMENTE
-              ACIMA do slogan. Assim ela nunca cai em cima do rosto do
-              candidato, não importa como a foto é cortada em cada breakpoint.
-            */}
-            <div className="mb-2 flex justify-center drop-shadow-[0_4px_10px_rgba(0,0,0,0.55)] sm:mb-3 md:justify-end">
+            <div className="mb-2 flex justify-center drop-shadow-[0_4px_10px_rgba(0,0,0,0.55)] sm:mb-3 md:hidden">
               <Image
                 src="/images/LOGO_EDSON.png"
                 alt="Edson Martins"
                 width={400}
                 height={260}
-                className="h-auto w-32 object-contain sm:w-36 md:w-40 lg:w-44"
+                className="h-auto w-32 object-contain sm:w-36"
               />
             </div>
 
-            <h1 className="font-display text-3xl leading-[0.95] tracking-wide text-white sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-display text-3xl leading-[0.95] tracking-wide text-white sm:text-4xl md:text-6xl">
               O Deputado
               <br />
               <span
