@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     'Edson Martins',
     '30800',
-    'Deputada Estadual',
+    'Deputado Estadual',
     'Partido NOVO',
     'Rondônia',
     'O Deputado do Povo',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Edson Martins 30800 — O Deputado do Povo!',
     description:
-      'Candidato a Deputada Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
+      'Candidato a Deputado Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
     url: 'https://https://edsonmartins.vercel.app/',
     siteName: 'Edson Martins 30800',
     type: 'website',
