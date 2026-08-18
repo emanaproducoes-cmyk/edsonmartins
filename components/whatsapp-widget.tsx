@@ -133,7 +133,7 @@ export function WhatsappWidget() {
 
   const finalMessage = () => {
     const lines = [
-      'Olá! Vim pelo site da campanha Adriana Martins 3030.',
+      'Olá! Vim pelo site da campanha Edson Martins 30800.',
       name && `Nome: ${name}`,
       city && `Cidade: ${city}`,
       group && `Grupo de interesse: ${group}`,
