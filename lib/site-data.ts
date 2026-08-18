@@ -1,5 +1,5 @@
-export const WHATSAPP_NUMBER = '5569992865915'
-export const WHATSAPP_DISPLAY = '(69) 99286-5915'
+export const WHATSAPP_NUMBER = '5569993883838'
+export const WHATSAPP_DISPLAY = '(69) 99388-3838'
 
 export function whatsappLink(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
