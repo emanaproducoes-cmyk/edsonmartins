@@ -110,6 +110,6 @@ export const ETAPAS = [
   {
     titulo: 'Votar',
     desc: 'No dia da eleição, confirme o voto na mudança concreta.',
-    exemplo: 'Digite 303800 e eleja o deputado do povo de Rondônia.',
+    exemplo: 'Digite 30800 e eleja o deputado do povo de Rondônia.',
   },
 ]
