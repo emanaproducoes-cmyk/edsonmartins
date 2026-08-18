@@ -332,7 +332,7 @@ export function MinhasPropostas() {
               Minhas propostas para Rondônia
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Os problemas reais de Rondônia são os mais básicos: Saúde Básica, Melhorias nas vias urbanas, Profissinalização para os Jovens - Vamos juntos nessa jornada.
+              Os problemas reais de Rondônia são os mais básicos: Saúde Básica, Melhorias nas vias urbanas, Profissionalização para os Jovens - Vamos juntos nessa jornada.
             </p>
           </Reveal>
 
