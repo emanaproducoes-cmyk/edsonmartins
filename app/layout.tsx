@@ -14,7 +14,7 @@ const robotoCondensed = Roboto_Condensed({
   display: 'swap',
 })
 export const metadata: Metadata = {
-  metadataBase: new URL('https://adrianamartins-virid.vercel.app'),
+  metadataBase: new URL('https://edsonmartins.vercel.app'),
   title: 'Edson Martins 30800 — Deputado Estadual | O Deputado do Povo!',
   description:
     'Edson Martins, candidato a Deputado Estadual por Rondônia pelo Partido NOVO. O Deputado do Povo! Edson Martins leva a Assembleia quarenta anos de história, gestão honesta e compromisso com povo rondoniense.',
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
     title: 'Edson Martins 30800 — O Deputado do Povo!',
     description:
       'Candidato a Deputado Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
-    url: 'https://https://edsonmartins.vercel.app/',
+    url: 'https://edsonmartins.vercel.app/',
     siteName: 'Edson Martins 30800',
     type: 'website',
     locale: 'pt_BR',
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/OPENGRAPH_EDSON.webp',
         width: 1200,
         height: 630,
-        alt: 'Edson Martins 30800 — O Deputado do Povo! Candidata a Deputada Estadual por Rondônia.',
+        alt: 'Edson Martins 30800 — O Deputado do Povo! Candidato a Deputado Estadual por Rondônia.',
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Edson Martins 30800 — O Deputado do Povo!',
     description:
       'Candidato a Deputado Estadual por Rondônia pelo Partido NOVO. Um plano concreto para Rondônia.',
-    images: ['/og-image.png'],
+    images: ['/images/OPENGRAPH_EDSON.webp'],
   },
 }
 export const viewport: Viewport = {
