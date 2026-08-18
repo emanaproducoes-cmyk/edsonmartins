@@ -37,18 +37,18 @@ export function Footer() {
 
             <div className="relative px-1 py-1">
               <Image
-                src="/images/Logo_AM_Stroke_6px.png"
-                alt="Adriana Martins 3030"
+                src="/images/LOGO_HORIZONTAL_EDSON_LARANJA.png"
+                alt="Edson Martins 30800"
                 width={600}
                 height={650}
                 className="h-auto w-36 md:w-40"
                 priority={false}
               />
               <p className="mt-1 font-display text-2xl italic tracking-wide text-novo-orange">
-                Coragem para Cuidar!
+                O DEPUTADO DO POVO!
               </p>
               <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">
-                Adriana Martins — Candidata a Deputada Federal por Rondônia pelo Partido NOVO.
+                Edson Martins — Candidato a Deputada Estadual por Rondônia pelo Partido NOVO.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export function Footer() {
             <h3 className="font-display text-xl uppercase tracking-wide text-white/90">Fale com a campanha</h3>
             <p className="mt-4 text-sm text-white/60">WhatsApp oficial</p>
             <a
-              href={whatsappLink('Olá! Quero falar com a campanha Adriana Martins 3030.')}
+              href={whatsappLink('Olá! Quero falar com a campanha Edson Martins 30800.')}
               target="_blank"
               rel="noopener noreferrer"
               className="font-display text-2xl tracking-wide text-novo-yellow transition-colors hover:text-novo-orange"
@@ -87,13 +87,13 @@ export function Footer() {
                 {
                   icon: InstagramIcon,
                   label: 'Instagram',
-                  href: 'https://www.instagram.com/adrianamartinsoficial30/',
+                  href: 'https://www.instagram.com/dep.edson_martins/',
                 },
                 { icon: FacebookIcon, label: 'Facebook', href: 'https://facebook.com' },
                 {
                   icon: MessageCircle,
                   label: 'WhatsApp',
-                  href: whatsappLink('Olá! Quero somar forças com a campanha 3030.'),
+                  href: whatsappLink('Olá! Quero somar forças com a campanha do Dep. Estadual Edson Martins 30800.'),
                 },
               ].map(({ icon: Icon, label, href }) => (
                 <a
@@ -113,11 +113,11 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-xs leading-relaxed text-white/45">
-            Propaganda eleitoral autorizada. CNPJ 68.353.217/0001-19. A produção deste material segue as
+            Propaganda eleitoral autorizada. CNPJ 68.353.190/0001-64. A produção deste material segue as
             diretrizes de identidade visual do Partido NOVO (2023).
           </p>
           <p className="mt-3 text-xs text-white/45">
-            &copy; {new Date().getFullYear()} Adriana Martins 3030 · Coragem para Cuidar! · Todos os
+            &copy; {new Date().getFullYear()} Edson Martins 30800 · O Deputado do Povo! · Todos os
             direitos reservados.
           </p>
         </div>
