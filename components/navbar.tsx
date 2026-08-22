@@ -4,6 +4,10 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS, whatsappLink } from '@/lib/site-data'
 import { cn } from '@/lib/utils'
+
+const LEGAL_NOTICE =
+  'PROPAGANDA ELEITORAL | EDSON MARTINS | CNPJ 68.353.217/0001-19 | NOVO/RO'
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
@@ -22,16 +26,23 @@ export function Navbar() {
           : 'bg-transparent',
       )}
     >
+      {/* Faixa de identificação obrigatória — sempre visível, discreta e proporcional */}
+      <div className="w-full border-b border-white/10 bg-novo-navy/95 backdrop-blur-sm">
+        <p className="mx-auto max-w-7xl px-4 py-1 text-center text-[10px] font-medium uppercase tracking-[0.15em] text-white/60 md:px-8 md:text-left md:text-[11px] md:tracking-[0.2em]">
+          {LEGAL_NOTICE}
+        </p>
+      </div>
+
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
         {/* Marca — logo horizontal, funciona como home */}
         <a
           href="#topo"
-          aria-label="Adriana Martins - início"
+          aria-label="Edson Martins - início"
           className="group/logo relative inline-flex items-center overflow-hidden"
         >
           <Image
             src="/images/LOGO_HORIZONTAL_EDSON.png"
-            alt="Adriana Martins 3030 - Partido NOVO"
+            alt="Edson Martins 3030 - Partido NOVO"
             width={320}
             height={64}
             priority
@@ -54,7 +65,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href={whatsappLink('Olá! Quero apoiar a campanha da Adriana Martins 3030.')}
+            href={whatsappLink('Olá! Quero apoiar a campanha do Edson Martins 3030.')}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-novo-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-all duration-300 hover:scale-[1.04] hover:bg-novo-orange-dark hover:shadow-lg hover:shadow-novo-orange/30"
@@ -92,7 +103,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href={whatsappLink('Olá! Quero apoiar a campanha da Adriana Martins 3030.')}
+            href={whatsappLink('Olá! Quero apoiar a campanha do Edson Martins 3030.')}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
