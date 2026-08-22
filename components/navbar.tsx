@@ -6,7 +6,7 @@ import { NAV_LINKS, whatsappLink } from '@/lib/site-data'
 import { cn } from '@/lib/utils'
 
 const LEGAL_NOTICE =
-  'PROPAGANDA ELEITORAL | EDSON MARTINS | CNPJ 68.353.217/0001-19 | NOVO/RO'
+  'PROPAGANDA ELEITORAL | EDSON MARTINS | CNPJ 68.353.217/0001-64 | NOVO/RO'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
